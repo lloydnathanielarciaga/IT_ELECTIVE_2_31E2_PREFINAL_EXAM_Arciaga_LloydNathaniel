@@ -1,0 +1,47 @@
+﻿@model IT_ELECTIVE_2_31E2_PREFINAL_EXAM_Arciaga_LloydNathaniel.Models.Question19ViewModel
+
+@{
+    ViewData["Title"] = "Question 19";
+}
+
+<div class="wireframe-container">
+    <!-- Lagyan ng Sidebar -->
+    <partial name="_Sidebar" />
+
+    <div class="main-content">
+        <div>
+            <!-- Buong Question Box -->
+            <div class="card-section">
+                <div class="card-title">Question:</div>
+                <div class="question-text">@Model.Question</div>
+            </div>
+
+            <!-- Buong Answer Box -->
+            <div class="card-section">
+                <div class="card-title">Answer:</div>
+                <div class="answers-container">
+                    @for (int i = 0; i < Model.Options.Count; i++)
+                    {
+                        string CorrectClass = (i == Model.CorrectOptionIndex) ? "correct" : "";
+
+                        <button type="button" class="option-btn @CorrectClass">
+                            @Model.Options[i]
+                        </button>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Arrow sa Ibabang bahagi "Next" at "Previous" -->
+        <div class="nav-footer">
+            <a asp-controller="@Model.PreviousController" asp-action="Index" class="nav-arrow-btn">
+                <span>Previous</span>
+                <div class="arrow-box">&larr;</div>
+            </a>
+            <a asp-controller="@Model.NextController" asp-action="Index" class="nav-arrow-btn">
+                <span>Next</span>
+                <div class="arrow-box">&rarr;</div>
+            </a>
+        </div>
+    </div>
+</div>
