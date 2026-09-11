@@ -2,7 +2,7 @@
 {
     public class Question2ViewModel
     {
-        public int CurrentQuestionNumber { get; } = 1;
+        public int CurrentQuestionNumber { get; } = 2;
         public string Question { get; set; } = "2. Which approach is being used when an existing database is used to generate EF Core entity classes?";  // Dito ang Question
         public List<string> Options { get; set; } = new List<string>
     {

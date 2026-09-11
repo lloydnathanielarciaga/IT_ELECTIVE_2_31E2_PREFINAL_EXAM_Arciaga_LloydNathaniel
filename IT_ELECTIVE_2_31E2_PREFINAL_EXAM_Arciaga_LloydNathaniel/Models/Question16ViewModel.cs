@@ -2,7 +2,7 @@
 {
     public class Question16ViewModel
     {
-        public int CurrentQuestionNumber { get; } = 1;
+        public int CurrentQuestionNumber { get; } = 16;
         public string Question { get; set; } = "16. Which is the best reason for having a database-level unique constraint on StudentNumber?";  // Dito ang Question
         public List<string> Options { get; set; } = new List<string>
     {

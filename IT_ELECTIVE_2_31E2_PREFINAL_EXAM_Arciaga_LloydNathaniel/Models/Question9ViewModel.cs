@@ -2,7 +2,7 @@
 {
     public class Question9ViewModel
     {
-        public int CurrentQuestionNumber { get; } = 1;
+        public int CurrentQuestionNumber { get; } = 9;
         public string Question { get; set; } = "9. What is the purpose of a navigation property such as public Section Section { get; set; }?";  // Dito ang Question
         public List<string> Options { get; set; } = new List<string>
     {

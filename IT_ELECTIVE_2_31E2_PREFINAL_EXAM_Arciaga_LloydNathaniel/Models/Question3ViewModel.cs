@@ -2,7 +2,7 @@
 {
     public class Question3ViewModel
     {
-        public int CurrentQuestionNumber { get; } = 1;
+        public int CurrentQuestionNumber { get; } = 3;
         public string Question { get; set; } = "3. What is the primary purpose of Entity Framework Core?";  // Dito ang Question
         public List<string> Options { get; set; } = new List<string>
     {

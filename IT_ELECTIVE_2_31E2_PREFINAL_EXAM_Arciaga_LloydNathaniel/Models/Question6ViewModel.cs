@@ -2,7 +2,7 @@
 {
     public class Question6ViewModel
     {
-        public int CurrentQuestionNumber { get; } = 1;
+        public int CurrentQuestionNumber { get; } = 6;
         public string Question { get; set; } = "6. Where is a database connection string commonly stored in an ASP.NET Core MVC application?";  // Dito ang Question
         public List<string> Options { get; set; } = new List<string>
     {

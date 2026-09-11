@@ -2,7 +2,7 @@
 {
     public class Question8ViewModel
     {
-        public int CurrentQuestionNumber { get; } = 1;
+        public int CurrentQuestionNumber { get; } = 8;
         public string Question { get; set; } = "8. In the following example, what is SectionId?\r\npublic int SectionId { get; set; }\r\npublic Section Section { get; set; }\r\n";  // Dito ang Question
         public List<string> Options { get; set; } = new List<string>
     {

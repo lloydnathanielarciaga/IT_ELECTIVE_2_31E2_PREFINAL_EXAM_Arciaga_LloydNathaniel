@@ -2,7 +2,7 @@
 {
     public class Question4ViewModel
     {
-        public int CurrentQuestionNumber { get; } = 1;
+        public int CurrentQuestionNumber { get; } = 4;
         public string Question { get; set; } = "4. Which EF Core component is primarily responsible for communicating with the database?";  // Dito ang Question
         public List<string> Options { get; set; } = new List<string>
     {

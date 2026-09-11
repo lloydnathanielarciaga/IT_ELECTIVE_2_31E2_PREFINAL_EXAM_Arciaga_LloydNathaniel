@@ -2,7 +2,7 @@
 {
     public class Question14ViewModel
     {
-        public int CurrentQuestionNumber { get; } = 1;
+        public int CurrentQuestionNumber { get; } = 14;
         public string Question { get; set; } = "14. Why is server-side validation still necessary if client-side validation exists?";  // Dito ang Question
         public List<string> Options { get; set; } = new List<string>
     {

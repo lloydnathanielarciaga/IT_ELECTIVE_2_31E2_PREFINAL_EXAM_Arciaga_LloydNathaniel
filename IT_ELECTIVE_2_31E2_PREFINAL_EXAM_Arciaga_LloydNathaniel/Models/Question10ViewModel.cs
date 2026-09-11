@@ -2,7 +2,7 @@
 {
     public class Question10ViewModel
     {
-        public int CurrentQuestionNumber { get; } = 1;
+        public int CurrentQuestionNumber { get; } = 10;
         public string Question { get; set; } = "10. What does .Include() generally allow EF Core to do?";  // Dito ang Question
         public List<string> Options { get; set; } = new List<string>
     {

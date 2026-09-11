@@ -2,7 +2,7 @@
 {
     public class Question15ViewModel
     {
-        public int CurrentQuestionNumber { get; } = 1;
+        public int CurrentQuestionNumber { get; } = 15;
         public string Question { get; set; } = "15. A school requires every student to have a unique Student Number. Which rule best represents this requirement?";  // Dito ang Question
         public List<string> Options { get; set; } = new List<string>
     {
