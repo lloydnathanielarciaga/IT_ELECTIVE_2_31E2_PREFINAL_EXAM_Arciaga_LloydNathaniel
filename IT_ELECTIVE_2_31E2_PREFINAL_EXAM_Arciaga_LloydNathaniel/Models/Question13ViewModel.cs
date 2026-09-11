@@ -2,7 +2,7 @@
 {
     public class Question13ViewModel
     {
-        public int CurrentQuestionNumber { get; } = 1;
+        public int CurrentQuestionNumber { get; } = 13;
         public string Question { get; set; } = "13. Which type of validation occurs in the browser before a request is sent to the server?";  // Dito ang Question
         public List<string> Options { get; set; } = new List<string>
     {

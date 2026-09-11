@@ -2,7 +2,7 @@
 {
     public class Question18ViewModel
     {
-        public int CurrentQuestionNumber { get; } = 1;
+        public int CurrentQuestionNumber { get; } = 18;
         public string Question { get; set; } = "18. Which middleware is commonly used in ASP.NET Core for centralized exception handling?";  // Dito ang Question
         public List<string> Options { get; set; } = new List<string>
     {

@@ -2,7 +2,7 @@
 {
     public class Question7ViewModel
     {
-        public int CurrentQuestionNumber { get; } = 1;
+        public int CurrentQuestionNumber { get; } = 7;
         public string Question { get; set; } = "7. A Student belongs to exactly one Section, while a Section can contain many students. What type of relationship is this?";  // Dito ang Question
         public List<string> Options { get; set; } = new List<string>
     {

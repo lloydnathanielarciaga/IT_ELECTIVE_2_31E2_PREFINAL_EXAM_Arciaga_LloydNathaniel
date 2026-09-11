@@ -2,7 +2,7 @@
 {
     public class Question12ViewModel
     {
-        public int CurrentQuestionNumber { get; } = 1;
+        public int CurrentQuestionNumber { get; } = 12;
         public string Question { get; set; } = "12. Consider this query:\r\n\r\nvar students = _context.Students.Include(s => s.Section).ToList();\r\n\r\nWhat is the main benefit of Include(s => s.Section)?\r\n";  // Dito ang Question
         public List<string> Options { get; set; } = new List<string>
     {

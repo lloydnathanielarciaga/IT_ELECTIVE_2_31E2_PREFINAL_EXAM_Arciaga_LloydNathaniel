@@ -2,7 +2,7 @@
 {
     public class Question20ViewModel
     {
-        public int CurrentQuestionNumber { get; } = 1;
+        public int CurrentQuestionNumber { get; } = 20;
         public string Question { get; set; } = "20. A student already belongs to Section A for a particular subject. The application attempts to assign the same student to Section A again. What is the primary concern?";  // Dito ang Question
         public List<string> Options { get; set; } = new List<string>
     {

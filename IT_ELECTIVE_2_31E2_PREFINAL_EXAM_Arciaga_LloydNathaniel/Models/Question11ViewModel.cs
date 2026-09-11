@@ -2,7 +2,7 @@
 {
     public class Question11ViewModel
     {
-        public int CurrentQuestionNumber { get; } = 1;
+        public int CurrentQuestionNumber { get; } = 11;
         public string Question { get; set; } = "11. Why might a ViewModel be used when displaying Student and Section information?";  // Dito ang Question
         public List<string> Options { get; set; } = new List<string>
     {

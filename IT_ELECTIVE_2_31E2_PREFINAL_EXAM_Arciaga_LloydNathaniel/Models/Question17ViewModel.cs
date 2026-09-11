@@ -2,7 +2,7 @@
 {
     public class Question17ViewModel
     {
-        public int CurrentQuestionNumber { get; } = 1;
+        public int CurrentQuestionNumber { get; } = 17;
         public string Question { get; set; } = "17. What is the purpose of a try...catch block in a controller?";  // Dito ang Question
         public List<string> Options { get; set; } = new List<string>
     {

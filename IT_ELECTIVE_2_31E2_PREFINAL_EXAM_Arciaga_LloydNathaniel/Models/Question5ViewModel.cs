@@ -2,7 +2,7 @@
 {
     public class Question5ViewModel
     {
-        public int CurrentQuestionNumber { get; } = 1;
+        public int CurrentQuestionNumber { get; } = 5;
         public string Question { get; set; } = "5. What does the following command primarily do? dotnet ef dbcontext scaffold \"ConnectionString\" Microsoft.EntityFrameworkCore.SqlServer -o Models";  // Dito ang Question
         public List<string> Options { get; set; } = new List<string>
     {
