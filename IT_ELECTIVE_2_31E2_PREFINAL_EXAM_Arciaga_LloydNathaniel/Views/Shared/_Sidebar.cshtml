@@ -1,0 +1,13 @@
+﻿<div class="sidebar">
+    <div class="sidebar-title">Questions</div>
+    <div class="number-grid">
+        @for (int i = 1; i <= 20; i++)
+        {
+            string targetController = "Question" + i;
+            string currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+            string activeClass = (string.Equals(currentController, targetController, StringComparison.OrdinalIgnoreCase)) ? "active" : "";
+
+            <a asp-controller="@targetController" asp-action="Index" class="num-btn @activeClass">@i</a>
+        }
+    </div>
+</div>
