@@ -1,1 +1,1 @@
-# IT_ELECTIVE_2_31E2_PREFINAL_EXAM_Arciaga_LloydNathaniel
+# Name: Arciaga, Lloyd Nathaniel T. | Class and Section: BSIT - 31E2
