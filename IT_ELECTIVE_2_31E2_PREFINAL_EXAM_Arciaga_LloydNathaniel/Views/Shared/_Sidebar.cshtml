@@ -10,4 +10,10 @@
             <a asp-controller="@targetController" asp-action="Index" class="num-btn @activeClass">@i</a>
         }
     </div>
+
+    <!-- New Answers List Button -->
+    @{
+        string isAnswersListActive = (string.Equals(ViewContext.RouteData.Values["controller"]?.ToString(), "AnswersList", StringComparison.OrdinalIgnoreCase)) ? "active" : "";
+    }
+    <a asp-controller="AnswersList" asp-action="Index" class="answers-list-btn @isAnswersListActive">Answers List</a>
 </div>
