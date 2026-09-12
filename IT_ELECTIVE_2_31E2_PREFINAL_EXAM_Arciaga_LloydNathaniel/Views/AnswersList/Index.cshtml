@@ -1,0 +1,39 @@
+﻿@model IT_ELECTIVE_2_31E2_PREFINAL_EXAM_Arciaga_LloydNathaniel.Models.AnswersListViewModel
+
+@{
+    ViewData["Title"] = "Answers List";
+}
+
+<div class="wireframe-container">
+    <partial name="_Sidebar" />
+
+    <div class="main-content">
+        <div class="answers-list-container">
+            <h2 class="answers-title">My Answers</h2>
+
+            <div class="answers-grid">
+                <!-- Left Column (1-10) -->
+                <div class="answers-column">
+                    @for (int i = 1; i <= 10; i++)
+                    {
+                        <div class="answer-item">
+                            <span class="answer-num">@i.</span>
+                            <span class="answer-letter">@Model.CorrectAnswers[i]</span>
+                        </div>
+                    }
+                </div>
+
+                <!-- Right Column (11-20) -->
+                <div class="answers-column">
+                    @for (int i = 11; i <= 20; i++)
+                    {
+                        <div class="answer-item">
+                            <span class="answer-num">@i.</span>
+                            <span class="answer-letter">@Model.CorrectAnswers[i]</span>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
