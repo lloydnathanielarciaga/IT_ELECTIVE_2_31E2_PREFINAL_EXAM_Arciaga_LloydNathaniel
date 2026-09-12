@@ -18,14 +18,21 @@ body {
 
 .wireframe-container {
     display: flex;
-    gap: 24px;
+    flex-direction: row; /* Force side-by-side */
+    flex-wrap: nowrap; /* Prevent stacking */
+    align-items: flex-start; /* Prevent vertical stretching */
+    gap: 32px; /* Ensure hard spacing between panels */
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    min-height: 80vh;
+    box-sizing: border-box;
 }
 
 .sidebar {
+    /* flex: grow shrink basis. This locks the width permanently */
+    flex: 0 0 260px;
     width: 260px;
+    box-sizing: border-box;
     background-color: var(--sidebar-bg);
     border-radius: 16px;
     padding: 24px;
@@ -72,7 +79,9 @@ body {
     }
 
 .main-content {
-    flex: 1;
+    flex: 1 1 auto; /* Take up all remaining space */
+    min-width: 0; /* Prevent text overflow from pushing boundaries */
+    box-sizing: border-box;
     background-color: var(--card-bg);
     border-radius: 16px;
     padding: 32px;
@@ -174,4 +183,71 @@ body {
     background-color: var(--accent-indigo);
     color: #ffffff;
     border-color: var(--accent-indigo);
+}
+
+/* Sidebar Oval Button */
+.answers-list-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 32px;
+    background-color: #ffffff;
+    color: var(--text-primary);
+    border: 3px solid var(--text-primary);
+    border-radius: 50px;
+    text-align: center;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+    .answers-list-btn:hover,
+    .answers-list-btn.active {
+        background-color: var(--accent-indigo);
+        color: #ffffff;
+        border-color: var(--accent-indigo);
+    }
+
+/* Answers List Layout */
+.answers-list-container {
+    padding: 20px;
+    height: 100%;
+}
+
+.answers-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 48px;
+    color: var(--text-primary);
+}
+
+.answers-grid {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.answers-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.answer-item {
+    display: flex;
+    gap: 20px;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.answer-num {
+    width: 40px;
+    text-align: right;
+    color: var(--text-primary);
+}
+
+.answer-letter {
+    color: var(--accent-indigo); /* Highlights letters in modern blue */
 }
